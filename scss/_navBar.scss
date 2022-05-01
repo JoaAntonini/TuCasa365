@@ -1,0 +1,58 @@
+
+
+nav{
+	transition: all 4s;
+	color:$whiteColor;
+}
+
+#navHeader{
+	a{
+		color:$whiteColor;
+	}
+}
+
+.fondoIndex{
+	background: rgb(52,74,77);
+	background: linear-gradient(90deg, rgba(52,74,77,1) 0%, rgba(11,7,51,1) 15%, rgba(44,54,88,1) 66%, rgba(97,132,150,1) 89%);
+	@media (min-width: 280px){
+		width: $w-100;
+	}
+}
+
+.logoMargin{
+	display:  flex;
+	box-sizing: border-box;
+	text-decoration: none;
+	width: $w-80;
+	align-content: center;
+	align-items: center;
+	margin-left: $rem-3;
+	height: $w-60;
+	margin-top:  $rem-1;
+	@media (min-width: 280px){
+		width: $w-80;
+	}
+	@media (min-width: 768px){
+		width: $w-45;
+		display:  flex;
+		align-items: flex-start;
+		margin-left: $rem-2;
+		box-sizing: border-box;
+		margin-top:  $rem-0;
+	}
+}
+
+.opciones{
+	color:$whiteColor;
+	font-size: $rem-2;	
+	@media (min-width: 1200px){
+		font-size: $rem-3;
+	}
+}
+
+	.opciones:hover{
+		transform: translateY(-4px);
+		cursor: pointer;
+		transition: all 2s;
+		font-size: $rem-3;
+	}	

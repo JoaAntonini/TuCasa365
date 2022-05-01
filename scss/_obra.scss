@@ -1,0 +1,142 @@
+
+.headerObra{
+	text-transform: uppercase;
+	font-style: $fontXl;
+	background-color: map-get($map:$paleta1, $key:'diecisiete');
+	color:$whiteColor;
+	@include MarginPadding($rem-1, $rem-1);
+	@media(min-width: 1300px){
+		font-size: $textXXl;
+	}
+}
+
+
+#etapas{
+	width: $w-100;
+	@include MarTopBot($rem-2, $rem-2);
+	.botonEtapas{
+		box-shadow: none;
+		width: $w-100;
+	}
+	.tituloEtapas{
+		width: $w-60;	
+		@include MarginPadding($rem-1, $rem-1);
+		color:$whiteColor;
+		font-weight: $fontMd;
+		text-align: center;
+		font-size: $textLg;
+		border: double;
+		background-color: map-get($map:$paleta1, $key:'dieciseis');
+	}
+	.alineacardEtapa{
+		position: relative;
+		margin-top: $rem-3;
+		@include flexColumn(flex, column, center);
+	}
+	.evolucion{
+		@include flexColumn(flex, column, center);
+		font-size: $textSmh;
+		@media(min-width: 552px){
+			font-size: $textMd;
+		}
+		@media(min-width: 992px){
+			display: inline;
+		}
+	}
+	.listaIzquierda{
+		li{
+			@include MarTopBot($rem-0, $rem-2);
+		}
+		@media(min-width: 992px){
+			display: inline;
+			float:left;
+			@include MarginPadding($rem-1, $rem-1);
+		}
+	}
+	.listaDerecha{
+		li{
+			@include MarTopBot($rem-0, $rem-2);
+		}
+		@media(min-width: 992px){
+			display: inline;
+			float:right;
+			@include MarginPadding($rem-1, $rem-1);
+		}
+	}
+}
+	
+
+#insumos{
+	width: $w-100;
+	@include MarTopBot($rem-2, $rem-2);
+	.botonInsumos{
+		box-shadow: none;
+		width: $w-100;
+	}
+	.alineacardEtapa{	
+		position: relative;
+		@include flexColumn(flex, column, center);
+	}
+	.tituloMateriales1{
+		width: $w-60;	
+		@include MarginPadding($rem-1, $rem-1);
+		background-color: map-get($map:$paleta1, $key:'diecisiete');
+		color:$whiteColor;
+		font-weight: $fontMd;
+		text-align: center;
+		font-size: $textLg;
+		border: double;	
+	}
+	.botonera{
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	}
+	.botonMas3{
+		background-color: $botonMas3;
+	}
+}
+
+#recursos{
+	width: $w-100;
+	@include MarTopBot($rem-2, $rem-2);
+	.botonRecursos{
+		box-shadow: none;
+		width: $w-100;
+	}
+	.cajaProfesionales{
+		@include MarTopBot($rem-3, $rem-3);
+		@include flexColumn(flex, column, center);
+		text-align: center;
+		@media(min-width: 768px){
+			@include flexRow(flex, row, space-around);
+		}
+		.detalleCaja{
+			@include MarTopBot($rem-3, $rem-3);
+			border-radius: 22px 10px 22px 10px;
+			-webkit-border-radius: 22px 10px 22px 10px;
+			-moz-border-radius: 22px 10px 22px 10px;
+			border: 10px solid #353232;
+			background-color: $whiteColor;
+			text-align: center;
+			@include flexColumn(flex, column, center);
+			ol{
+				list-style: none;
+				font-size: $textSmh;
+				font-weight: $fontMd;
+				font-style: $fontItalic;
+				text-align: center;
+				li{
+					@include MarTopBot($rem-105, $rem-105);
+					text-align: center;
+				}
+				a{
+					text-decoration: none;
+					color:  $keyColor;
+					@include MarTopBot($rem-1, $rem-1);
+				}
+			}
+		}
+
+	}
+}

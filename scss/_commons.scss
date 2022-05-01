@@ -1,0 +1,146 @@
+
+//paleta
+$paleta1:(
+'uno': rgb(2,2,29), //fondo index
+'dos': rgba(77, 84, 84, 0.9),//title
+'tres': #889999,//texto nosotros
+'cuatro': rgba(221, 235, 235, 0.9),//bglight
+'cinco': #444,//footer
+'seis':#212529,//dark color
+'siete':#E6E8E8, //gris claro deco
+'ocho': rgba(221, 247, 185, 1),//gris verdoso deco
+'nueve': #2B2F31,//$tono1
+'diez':#344A4D,//$tono2
+'once':#55838A,//$tono3
+'doce':#2c3658,//$tono4
+'trece':#021D20,//$tono5
+'catorce':#31323C,//$tono6
+'quince': rgba(44,54,88,1),//$tono7
+'dieciseis': rgba(52,74,77,1),//$tono8
+'diecisiete': rgba(11,7,51,1),//$tono9
+'dieciocho':#e9ecef,//$tono10
+);
+
+//variables 
+
+$mainColor:rgba(80,199,199,0.8);
+$navColor: rgb(51,48,91);		
+$secondcolor: darkviolet;
+$keyColor:black;//si
+$darkColor: #212529;//si
+$tableColor: #889999;
+$formTitleColor: rgba(77, 84, 84, 0.9);//si
+$formColor: #889999;
+$backgroundImage: url(../img/fondo.jpg);
+$bgDark: rgba(224, 224, 209, 0.7);
+$bgLight: rgba(221, 235, 235, 0.9);//si
+$bgMedium: #E6E8E8;
+$colorBorder:#5F9EA0;
+$colorfooter:#444;//si
+$backgroundFooter: rgb(6,57,94); //si
+$footerIcons:#33383b;//si
+$whiteColor: white ;//si
+$backgroundBtnSend: #33383b;//si
+$backgroundTxt:#1f2022;//si
+$Shadowcolor1: rgba(255, 255, 255, 0.1);
+$textcolor: #d1d2d2;//si
+$Botonlineas:#809696;///si
+$textoDeco:   #38353B;
+$twitterColor:#333333;//si
+$listaDeco:#4B4749;
+$botonMas2:#6f92a0;//si
+$cajaPlazo: #6f6f79;//si
+$botonMas3:#889999;//si
+
+
+//sizing
+$w-160:160%;
+$w-145:145%;
+$w-140:140%;
+$w-130:130%;
+$w-120:120%;
+$w-110:110%;
+$w-106:106%;
+$w-103:103%;
+$w-100:100%;
+$w-95:95%;
+$w-90:90%;
+$w-80:80%;
+$w-75:75%;
+$w-70:70%;
+$w-65:65%;
+$w-60:60%;
+$w-55:55%;
+$w-50:50%;
+$w-45:45%;
+$w-30:30%;
+$w-25:25%;
+$w-20:20%;
+
+//medida rem
+$remneg-10: -10rem;
+$remneg-8: -8rem;
+$remneg-5: -5rem;
+$remneg-4: -4rem;
+$remneg-3: -3rem;
+$remneg-2: -2rem;
+$remneg-1: -1rem;
+$rem-0: 0rem;
+$rem-02: 0.2rem;
+$rem-03: 0.3rem;
+$rem-05: 0.5rem;
+$rem-1: 1rem;
+$rem-125: 1.25rem;
+$rem-105: 1.5rem;
+$rem-2: 2rem;
+$rem-205: 2.5rem;
+$rem-3: 3rem;
+$rem-305: 3.5rem;
+$rem-4: 4rem;
+$rem-5: 5rem;
+$rem-6: 6rem;
+$rem-7: 7rem;
+
+//medidas especiales
+$mg-10: 10rem;
+$mg-11: 11rem;
+$mg-20: 20rem;
+$mg-25: 25rem;
+$mg-30: 30rem;
+$mg-35: 35rem;
+$mg-40: 40rem;
+$mg-50: 50rem;
+$mg-54: 54rem;
+$mg-60: 60rem;
+$mg-100: 100rem;
+$mgneg-25: -25rem;
+$mgneg-50: -50rem;
+$mgneg-100: -100rem;
+
+//text align
+
+$l: left;
+$r: right;
+$c: center;
+
+
+
+
+html{
+	font-size: 62.5%;
+}
+
+
+body {
+	background-image: url(../img/fondo-min.jpg) ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+	overflow-x: hidden;
+}
+
+
+
+

@@ -1,0 +1,11 @@
+
+
+
+.videoIndex{
+	@media (min-width: 992px){
+				width: $w-100;
+	}
+	@media (min-width: 1192px){
+				width: $w-120;
+	}
+}

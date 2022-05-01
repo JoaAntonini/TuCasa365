@@ -1,0 +1,174 @@
+
+.footer{
+	background: $backgroundFooter;
+	background: linear-gradient(90deg, rgba(6,57,94,1) 0%, rgba(8,7,52,0.01) 99%);
+	box-sizing: border-box;
+	width: $w-100;
+	font-size:$textSmh;
+	text-align: left;
+	padding: $rem-2;
+	overflow: hidden;
+	@media (max-width: 768px){
+		padding: $rem-3;
+	}
+	@media (min-width: 992px){
+		font-size:$textMdh;
+	}
+	@media (min-width: 1200px){
+		font-size:$textLg;
+	}
+	@media (max-width: 1024px){
+		font: $fontBold $rem-105 $fontMain;
+	}
+	.footerLeft{
+		@include flexColumn(flex, column, flex-start);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		float: left;
+		@media (max-width: 768px){
+			float: none;
+			margin-bottom: $rem-3;
+		}
+		h3{
+			color:  $whiteColor;
+			text-decoration: underline;
+		}
+	}
+	.footerLinks{
+	color:  $whiteColor;
+	margin: $rem-0;
+	padding: $rem-1;
+	@include flexRow(flex, row, space-around);
+	flex-wrap: wrap;
+	width: $w-100;
+	font-size:$textSmt; 
+	@media (min-width: 480px){
+		flex-wrap: nowrap;
+		margin: $rem-1;
+		font-size:$textSmh; 
+	}	
+	@media (min-width: 992px){
+		flex-wrap: nowrap;
+		margin: $rem-1;
+		font-size:$textMd; 
+	}	
+	@media (min-width: 1200px){
+		flex-wrap: nowrap;
+		margin: $rem-1;
+		font-size:$textLg; 
+	}
+		a{
+			display: flex;
+			flex-direction: row;
+			text-decoration: none;
+			color:  $whiteColor;
+		}
+	}
+	.footerIcons{
+		@extend .footerLinks;
+		margin-top: $rem-2;
+		justify-content: space-evenly;
+		a{
+			@include flexColumn(flex, column, center);
+			width: $rem-305;
+			height:  $rem-205;
+			cursor: pointer;
+			background-color: $footerIcons;
+			border-radius: $rem-05;
+			font-size: $rem-2;
+			color:  $whiteColor;
+			text-align: center;
+			margin-right: $rem-03;
+			@include MarTopBot($rem-05, $rem-05);
+		}
+	}
+	.footerRight{
+		float: right;
+		@include flexColumn(flex, column, center);
+		@media (max-width: 768px){
+			float: none;
+			max-width: $rem-3;
+			margin: $rem-0 auto;
+		}
+		.alineacorreo{
+			@media (min-width: 768px){
+				@include flexColumn(flex, column, center);
+			}
+		}
+		p{
+			display: flex;
+			flex-direction: column;
+			color:  $whiteColor;
+		}
+		form{
+			@media (max-width: 768px){
+				margin-top: $rem-3;
+				display: block;
+			}
+			textarea{
+				display: block;
+				border-radius: $rem-03;
+				box-sizing: border-box;
+				background-color:  $backgroundTxt;
+				box-shadow: $rem-0 $rem-03 $rem-0 $rem-0 $Shadowcolor1;
+				border: none;
+				resize: none;
+				font: inherit;
+				font-size: $rem-105;
+				font-weight: $fontMd;
+				color:  $textcolor;
+				width: $mg-40;
+				padding: $rem-105;
+				height: $mg-10;
+				margin-bottom: $rem-2;
+				@media (max-width: 1024px){
+					width: $mg-25;
+				}
+			}
+			.correo{
+				display: block;
+				border-radius: $rem-03;
+				box-sizing: border-box;
+				background-color:  $backgroundTxt;
+				box-shadow: $rem-0 $rem-03 $rem-0 $rem-0 $Shadowcolor1;
+				border: none;
+				resize: none;
+				font: inherit;
+				font-size: $rem-1;
+				font-weight: $fontMd;
+				color:  $textcolor;
+				width:  $mg-25;
+				padding: $rem-105;
+				height: $rem-4;
+				margin-bottom: $rem-2;
+				margin-left:$rem-1;
+				@media (max-width: 1024px){
+					width: $mg-25;
+				}
+				input{
+					background:$backgroundTxt ;
+					border: none;
+				}
+			}
+		}
+			button{
+				border-radius: $rem-05;
+				background-color: $backgroundBtnSend;
+				color: $whiteColor;
+				border: $rem-0;
+				font-size: $textSmt;
+				padding: $rem-05 $rem-4;
+				font-weight: $fontMd;
+				float: right;
+				@media (max-width: 768px){
+					float: none;
+				}
+				@media (max-width: 1024px){
+					padding: $rem-1 $rem-305;
+				}
+			}
+	}
+}
+
+

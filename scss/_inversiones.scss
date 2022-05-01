@@ -1,0 +1,107 @@
+
+
+.titulosPrincipales{
+	text-transform: uppercase;
+	font-size: $textLg;
+	@include MarTopBot($rem-3, $rem-3);
+}
+
+#inversiones{
+	@include MarTopBot($rem-1, $rem-3);
+	padding: $rem-1;
+	.inversionesCard{
+		@extend .margenCards;
+		@include flexColumn(flex, column, center);
+		@media (max-width: 567px){
+			width: $w-95;
+		}
+		@media (min-width: 992px){
+			width: $w-100;
+			margin-left: $rem-1;
+		}
+	}
+}
+
+
+.alineaInversiones{
+	@include flexRow(flex, row, center);
+	@media (max-width: 567px){
+			@include flexColumn(flex, column, stretch);
+			width: $w-110;
+			margin-left: $rem-1;
+		}
+	@media (min-width: 568px){
+			@include flexRow(flex, row, space-evenly);
+			width: $w-100;
+		}
+	@media (min-width: 992px){
+			@include flexRow(flex, row, space-around);		
+			width: $w-95;
+			margin-left: $rem-2;
+		}
+
+}
+
+.botonMas2{
+	@extend .botonMas;
+	width: $w-100;
+	background-color: $botonMas2;
+	font-size: $textMd;
+}
+.botonMas2:hover{
+	    box-shadow: $rem-1 $rem-1 $rem-1 rgba(50,50,50,0.8);
+		transform: translateY(1px);
+		cursor: pointer;
+		transition: all 2s;
+		font-size: $textMdh;
+}
+
+.plazo{
+	width: $w-80;
+	border-top: 5px double $cajaPlazo;
+	border-right: 5px double $cajaPlazo;
+	border-bottom: 5px double $cajaPlazo;
+	border-left: 5px double $cajaPlazo;
+	background: #ffffff;
+	@include flexColumn(flex, column, center);
+	margin-left:  $rem-2;
+	@media (min-width: 568px){
+		width: $w-103;
+		margin-left: $remneg-1;
+	}
+}
+.cuadro1{
+	background-color: map-get($map:$paleta1, $key:'quince');
+	color: $whiteColor;
+	margin-bottom: $rem-2;
+}
+.cuadro2{
+	background-color: map-get($map:$paleta1, $key:'dieciseis');
+	color: $whiteColor;
+	margin-bottom: $rem-2;
+}
+
+.cuadro3{
+	background-color: map-get($map:$paleta1, $key:'diecisiete');
+	color: $whiteColor;
+	margin-bottom: $rem-2;
+}
+
+#perfil{
+	margin-left: $rem-2;
+	@include MarTopBot($rem-3, $rem-3);
+	.titulos{
+		@include MarTopBot($rem-2, $rem-2);
+		font-size:$textMd ;
+		//background-color: map-get($map:$paleta1, $key:'dieciocho');
+		font-weight: $fontBold;
+	}
+	label{
+		font-size:$textSmh;
+		@include MarTopBot($rem-2, $rem-2);
+	}
+	input{
+		@include MarTopBot($rem-205, $rem-205);
+	}
+}
+

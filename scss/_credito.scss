@@ -1,0 +1,247 @@
+
+
+/*Tu Credito*/
+
+/*Alineacion textos*/
+.textCenter{
+	text-align: $c;
+}
+.textRight{
+	text-align: $r ;
+}
+.textLeft{
+	text-align: $l ;
+}
+.textMd{
+	font-size:$textMd;
+}
+.textSmh{
+	font-size:$textSmh;
+}
+
+.alineaCards{
+	position: relative;
+	@include flexRow(flex, row, center);
+	@media (max-width: 567px){
+			@include flexRow(flex, column, center);
+			width: $w-100;
+			margin-left: $rem-7;
+		}
+	@media (min-width: 568px){
+			@include flexRow(flex, row, space-evenly);
+			width: $w-100;
+			margin-left:$rem-0;
+		}
+	@media (min-width: 992px){
+			@include flexRow(flex, row, space-evenly);		
+			width: $w-106;
+			margin-left: $rem-2;
+		}
+}
+
+.titleFormat1{
+	@extend .titleFormat;
+	@include MarTopBot($rem-3, $rem-3);
+	font-size: $textLg;
+	text-decoration: underline;
+	}
+
+.margenCards{
+	margin-top:$rem-05;
+	margin-right: $rem-2;
+	width: $w-60;
+	border-radius: 11px 9px 9px 9px;
+	-webkit-border-radius: 11px 9px 9px 9px;
+	-moz-border-radius: 11px 9px 9px 9px;
+	border: 7px solid #07143c;
+	@media (min-width: 567px){
+		width: $w-110;
+	}
+	@media (min-width: 568px){
+		width: $w-100;
+	}
+	@media (min-width: 992px){
+			width: $w-120;	
+			margin-left: $remneg-4;
+	}
+}
+
+#lineas{
+	@include flexColumn(flex, column, center);
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+    text-align: $c;
+ 	font-size: $textMd;
+ 	@include MarginPadding($rem-1, $rem-1);
+ 	position: relative;
+ 	top:  $rem-0;
+ 	color: $keyColor;
+  	text-transform: uppercase;
+  	@media(min-width: 778px){
+  			@include flexRow(flex, row, center);
+   			 flex-wrap: wrap;
+  	}
+  	@media(min-width: 992px){
+  			@include flexRow(flex, row, center);
+  			 flex-wrap: nowrap;
+  	}
+    .lineasItems{
+    	    position: relative;
+    	    @include flexColumn(flex, column,stretch);
+    		text-align: center;    	
+    		@include MarTopBot($rem-3, $rem-3);	
+    		margin-left: $rem-1;
+    		margin-right: $rem-1;
+    		padding: $rem-1;
+    		cursor: default;
+    		border-radius: $rem-1;
+    		background-color: $whiteColor;
+    		transition: background 0.3s;
+			position: relative;
+  			float: center;
+  			@media(min-width: 778px){
+  				@include flexColumn(flex, column,center);
+  			}
+  			@media(min-width: 992px){
+  				@include MarTopBot($rem-3, $rem-3);	
+    			margin-left: $rem-0;
+    			margin-right: $rem-0;
+    			padding: $rem-0;
+  			}
+  			@media(min-width: 1200px){
+  				@include MarginPadding($rem-1, $rem-1);
+  				@include flexColumn(flex, column,space-evenly);
+  			}
+    		.tituloLinea{
+   			 	color: $keyColor;
+    			font-size: $textMd;
+    			@include MarginPadding($rem-05, $rem-05);
+    			width: $w-100;
+    			position: relative;
+  				top: 0;
+ 				font-weight: $fontXl;
+  				display: inline-block;
+  				text-decoration: none;
+  				text-transform: uppercase;
+    			border-bottom: $rem-03 solid rgb(27, 26, 28);
+			}
+			.alineaInfo{
+			    text-align: $c;
+			    @include MarginPadding($rem-0, $rem-0);
+ 				list-style: outside none none;
+  				font-size: $textSm;
+  				li{
+  				 border-top: $rem-02 solid #d2d7e2;
+ 				 padding: $rem-1 5%;
+  				}
+			}
+			.listaLinea{
+				margin: $rem-0;
+    			padding: $rem-1 $rem-125 $rem-2;
+    			font-size: $rem-105;
+    		}
+    			.listaLinea:hover{
+    			cursor: pointer;
+    			font-size: $rem-2;
+				transition: all 2s;
+				background-color:$bgLight;
+   			}
+   			.botonMas{
+   		 		color: inherit;
+    			border: none;
+    			font-weight: $fontBold;
+   				margin-top: auto;
+    			padding: $rem-05 $rem-2;
+    			border-radius: $rem-05;
+    			background: $Botonlineas;
+    			transition: background 0.3s;
+    		}
+    			.botonMas:focus {
+    				outline: none;
+				}
+	}
+}
+
+.tituloRequisitos{
+	@extend .titleFormat1;
+	@extend .textCenter;
+	@include MarTopBot($rem-3, $rem-3);
+	font-size: $textLg;
+	}
+
+#requisitos{
+	 @include flexColumn(flex, column,center);
+	@include MarTopBot($rem-3, $rem-3);
+	 @media(min-width: 568px){
+	 	@include flexRow(flex, row,space-betwen);
+	 	width:$w-100;
+	 }
+	@media(min-width: 1024px){
+	 	@include flexRow(flex, row,space-betwen);
+	 	width:$w-90;
+	 	margin-left:$rem-3;
+	 }
+	
+
+	.formatoBox{
+		border-radius: 11px 11px 11px 11px;
+		-webkit-border-radius: 11px 11px 11px 11px;
+		-moz-border-radius: 11px 11px 11px 11px;
+		border: 9px double #5a4f4d;
+		background-color: map-get($map:$paleta1, $key:'trece');
+		color: $whiteColor;
+		width: $w-65;
+    	text-align: $c;
+    	font-size: $textSmh;
+    	@media(min-width: 568px){
+    	width: $w-50;
+    	margin-left: $rem-1;
+    	}	
+	}
+	.textoBox{
+		color: $whiteColor;
+		width: $w-65;
+    	text-align: $c;
+    	font-size: $textSmh;
+    	@media(min-width: 568px){
+	    	width: $w-50;
+    	}	
+	}
+}
+
+#docRequerida{
+	@include MarTopBot($rem-3, $rem-3);
+	margin-right: $rem-1;
+	.cuboDoc{
+		border-radius: 11px 9px 9px 9px;
+		-webkit-border-radius: 11px 9px 9px 9px;
+		-moz-border-radius: 11px 9px 9px 9px;
+		border: 7px solid #07143c;
+	}
+	.tituloDocumentacion{
+		@extend .titleFormat1;
+		@extend .textCenter;
+		@include MarTopBot($rem-3, $rem-3);
+		font-size: $textLg;
+	}
+	.BotonDoc{
+		border-radius: 10px 10px 10px 10px;
+		-webkit-border-radius: 10px 10px 10px 10px;
+		-moz-border-radius: 10px 10px 10px 10px;
+		background-color: map-get($map:$paleta1, $key:'quince');
+		color: $whiteColor;
+		border: 9px outset #e1e3f3;
+		text-align: center;
+		width: $w-95;
+		font-size: $textMd;
+		@include MarginPadding($rem-1, $rem-1);	
+	}
+	li{
+		font-size: $textMd;
+		list-style: none;
+		@include MarTopBot($rem-2, $rem-2);
+	}
+}
+
+

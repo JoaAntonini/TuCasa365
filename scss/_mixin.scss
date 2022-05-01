@@ -1,0 +1,32 @@
+
+@mixin MarTopBot($margin-top, $margin-bottom){
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
+}
+
+@mixin MarginPadding($margin, $padding){
+		margin: $margin;
+		padding:$padding;
+}
+
+@mixin texto($width, $font-size, $text-align, $background-color){
+		width: $width;
+		font-size:$font-size;
+		text-align: $text-align;	
+		background-color:$background-color;
+}
+
+
+
+@mixin flexRow($display, $flex-direction, $justify-content){
+		display: $display;
+		flex-direction: $flex-direction;
+		justify-content: $justify-content;
+}
+
+
+@mixin flexColumn($display, $flex-direction, $align-items){
+		display: $display;
+		flex-direction: $flex-direction;
+		align-items: $align-items;
+}

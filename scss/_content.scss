@@ -1,0 +1,268 @@
+
+.alineaElementos{
+	@media (max-width: 991px){
+		@include flexColumn(flex, column, center);
+	}
+	@media (min-width: 992px){
+		@include flexRow(flex, row, center);
+	}
+}
+
+.tamañoTwitter{
+		@media (max-width: 991px){
+			@include flexColumn(flex, column, center);
+			width: $w-100;
+		}
+		@media (min-width: 992px){
+			@include flexRow(flex, row, center);
+			width: $w-100;
+		}
+		@media (min-width: 1200px){
+			width: $w-120;
+			margin-left: $rem-1;
+			font-size: $textMdh;
+		}
+
+	}
+
+/*titulo*/
+#header{
+	background-color: map-get($map:$paleta1, $key:'doce');
+	@include MarginPadding($rem-0,$rem-1);
+	.headerTitle{
+		color:  $whiteColor;
+		font-weight: $fontXl;
+		font-size: $textLg;
+		@include MarTopBot($rem-2, $rem-2);
+		text-align: center;
+		text-transform: uppercase;
+		@media (min-width: 992px){
+			font-size:$textLg;
+		}
+		@media (min-width: 1200px){
+			font-size:$textXl;
+		}
+
+	}
+	.headerImagenes{
+		align-items: center;
+		position: relative;
+		margin-top: $rem-2;
+		@media (min-width: 576px){
+			margin-left: $rem-05;
+		}
+	}
+	.alineaFotos1{
+		@media (max-width: 575px){
+			@include flexColumn(flex, column, center);
+		}
+		@media (min-width: 768px){
+			margin-right:$rem-1;
+		}
+	}
+}
+
+
+/*nosotros*/	
+
+#nosotros{
+	@include flexColumn(flex, column, center);
+	@include MarTopBot($rem-3, $rem-3);
+	@media (min-width: 576px){
+		@include flexRow(flex, row, space-around);
+	}
+	.formatoAcordeon{
+		margin-top: $rem-1;
+	}
+	button{
+		background-color: $darkColor;
+		color:	$whiteColor;
+		font-size: $textMd;
+		font-style: $fontItalic;
+		box-shadow: none;
+		@media (min-width: 992px){
+			font-size:$textMdh;
+		}
+		@media (min-width: 1200px){
+			font-size:$textLg;
+		}
+	}
+	p{
+		font-size: $textSmh;
+		@media (min-width: 992px){
+			font-size:$textMd;
+		}
+		@media (min-width: 1200px){
+			font-size:$textMd;
+			width: 100%;
+    		line-height: 3rem;
+		}
+	}
+	.colapsebtn{
+		color:	$whiteColor;
+	}
+	.textBold{
+		font-weight: $fontBold;
+	}
+	.videoIndex{
+		@include flexRow(flex, row, center);
+		align-items: center;
+		flex-wrap: wrap;
+		width: $w-100;
+		padding: $rem-1;
+		margin-top: $rem-3;
+		@media (max-width: 767px){
+			width: $w-100;
+    		height: $mg-20;
+    	}
+		@media (min-width: 768px){
+			margin-top: $rem-1;
+			margin-left: $rem-1	;
+			width: $w-100;
+    		height: $mg-30;
+		}
+		@media (min-width: 992px){
+			justify-content: center;
+    		margin-left: $rem-2;
+    		width: $w-120;
+    		height: $mg-35;
+		}
+		@media (min-width: 1200px){
+			justify-content: center;
+    		margin-left: $rem-2;
+    		width: $w-130;
+    		height: $mg-40;
+		}
+	}
+}
+
+.redesDatos{
+	@include flexColumn(flex, column, center);
+	@media (min-width: 576px){
+		@include flexRow(flex, row, center);
+	}
+}
+
+#jstwitter{
+	@include flexColumn(flex, column, center);
+	text-align:center;
+	font-size: $textSmh;
+	width: 300px;
+	height: $mg-54;
+	margin-left: $rem-3;
+    margin-top:$rem-2;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+    color: $twitterColor;	
+	@media (min-width: 280px){
+		margin-left:  $rem-1;
+	}
+	@media (min-width: 576px){
+		margin-left:  $rem-5;
+		float: left ;
+	}
+	.scrollHorizontal {
+		width:$w-120;
+		height: $mg-40;
+		overflow: auto;
+		border: 1px solid #666;
+		background-color: map-get($map:$paleta1, $key:'diez');
+		padding: $rem-05;
+	}
+	.titleFormat{
+		margin-top: $rem-0;
+		padding: $rem-05;
+		color: $keyColor;
+		font-weight: $fontXl;
+		font-size: $textMd;
+		@media (min-width: 1192px){
+			font-size: $textLg;
+			width: $w-90;
+		}
+	}
+}
+
+#oferta{
+	@include flexColumn(flex, column, center);
+	@media (min-width: 576px){
+		@include flexRow(flex, row, center);
+		float: right ;
+	}
+	@media (min-width: 1200px){
+		margin-left: $mg-10;
+	}
+	.contenedorOfertas{
+	    width: $w-90;
+	    margin-top: $remneg-4;
+	    margin-bottom:$rem-4;
+	    margin-left: $mg-11;
+	    align-items: center;
+	    @media (min-width: 576px){
+	    	margin-top: $rem-1;
+	   	 	margin-bottom: $rem-1;
+	   	 	 width: $w-80;
+	   	}
+	   	@media (min-width: 992px){
+	   	 	 width: $w-70;
+	   	}
+	}
+	.foto{
+	    width: $w-100;
+	    @media (min-width: 576px){
+	   	 	 width: $w-80;
+	   	}
+	   	@media (min-width: 992px){
+	   	 	 width: $w-70;
+	   	}
+	}
+
+	.contenedorOfertas img:hover{
+	    box-shadow: $rem-1 $rem-1 $rem-1 rgba(50,50,50,0.8);
+	    transform: rotate(0deg) scale(1.2);
+	    z-index: 1;
+	}
+
+	.contenedorOfertas img{
+	    border-radius: $rem-1;
+	    width: $w-70;
+	    padding: $rem-1;
+	    background-color: $whiteColor;
+	    box-shadow: $rem-1 $rem-1 $rem-1 rgba(50,50,50,0.99);
+	    transition: all 1s ease-in;
+	    @media (min-width: 576px){
+	    	width: $w-80;
+	    }
+	}
+	.foto1{
+	    transform: rotate(4deg);
+	    top:90px;
+	    left:300px;
+	}
+}
+
+
+#contacto{
+	@include flexColumn(flex, column, center);
+	width: $w-100;
+	.formularioForm2{
+		@extend .formularioForm;
+		border-radius: $rem-1;
+	}
+	legend{
+		@include texto($w-100,$textSmh, center, $formTitleColor);
+		font-weight: $fontMd;
+	}
+}
+
+
+
+
+.formularioForm{
+		@include flexColumn(flex, column, stretch);
+		width: $w-70;
+		margin: $rem-05;
+		padding: $rem-05;
+		font-size: $rem-1;
+		background-color: $formColor;
+	}

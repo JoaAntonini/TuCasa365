@@ -1,0 +1,90 @@
+
+#carousel{
+	@media (max-width: 912px){
+		width: $w-100;
+		@include MarginPadding($rem-0, $rem-0);
+		align-items: center;
+	} 
+	@media (min-width: 992px){
+		width: $w-100;
+		@include MarginPadding($rem-0, $rem-0);
+		align-items: center;
+
+	}
+	.tituloDeco{
+		@include MarTopBot($rem-3, $rem-3);
+		text-decoration:blink;
+		font-size: $textLg;
+	}
+}
+
+.titleMaterialesFormat{
+	width: $w-80;
+	@include MarginPadding($rem-2, $rem-2);
+	color:$whiteColor;
+	font-weight: $fontXl;
+	text-align: center;
+	font-family: 'Yeseva One', cursive;
+	font-size: $textLg;
+	border: double;
+	background-color: map-get($map:$paleta1, $key:'dieciseis');
+}
+
+.formRubro{
+	width: $w-80;
+	color:$whiteColor;
+	font-size: $textMdh;
+	text-align: center;	
+	@include MarginPadding($rem-2, $rem-2);
+	background-color: map-get($map:$paleta1, $key:'diecisiete');
+
+}
+
+
+#profesionales{
+	@include flexColumn(flex, column, center);
+	margin-left: $remneg-3;
+	width: $w-100;
+	@include MarTopBot($rem-3, $rem-3);
+	@media (min-width: 540px){
+		@include flexColumn(flex, column, center);
+	}
+	.tituloProfesionales{
+		@extend	.titleMaterialesFormat;
+		@media (min-width: 540px){
+			width:$w-55;
+		}
+	}
+	.listProfesionalDeco{
+		@include flexColumn(flex, column, center);
+		list-style: none;
+		color:  $listaDeco;
+		@include MarTopBot($rem-2, $rem-2);
+		font-size: $textLg;
+		text-decoration: none;
+		@media (min-width: 768px){
+			@include flexRow(flex, row, center);
+			font-size: $textMd;
+		}
+		@media (min-width: 992px){
+			@include flexRow(flex, row, center);
+			font-size: $textLg;
+		}
+	}
+	.profesionalOption{
+	@include MarTopBot($rem-2, $rem-2);
+		a{
+			text-decoration: none;
+			color:  $keyColor;
+			@include MarginPadding($rem-1, $rem-1);
+				}
+	}
+}
+ 
+.margenCuadro{
+	@include MarTopBot($rem-2, $rem-2);
+	font-size: $textMd;
+	@media (min-width: 768px){
+			font-size:$textMdh;
+	}
+}

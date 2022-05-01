@@ -1,0 +1,4 @@
+source/
+*.ai
+*.log
+*node_modules/*

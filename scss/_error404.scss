@@ -1,0 +1,54 @@
+
+
+.mainbox {
+  @include flexRow(flex, row, center);
+  background-color: map-get($map:$paleta1, $key:'doce');
+  margin-top: $mg-10;
+  width: $w-100;
+  height: $mg-30;
+}
+
+  .err {
+     @include flexRow(flex, row, space-evenly);
+    color: #ffffff;
+    font-size: $textXXll;
+    margin-top: $rem-6;
+    width: $w-80;
+    @media (min-width: 576px){
+     font-size:$mg-11;
+    }
+  }
+
+.far {
+  margin-top: $remneg-1;
+  font-size: $textXXl;
+  position: absolute;
+  @media (min-width: 576px){
+    font-size: $mg-10;
+    margin-top: $remneg-3;
+  }
+}
+
+ 
+.mainbox2 {
+  @include flexRow(flex, row, center);
+  background-color: map-get($map:$paleta1, $key:'doce');
+  margin-top: $remneg-10;
+  width: $w-100;
+  height: $mg-10;
+}
+
+.msg {
+    text-align: center;
+    font-size: $textMd;
+    width: $w-100;
+  }
+
+a {
+  text-decoration: none;
+  color:$keyColor;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+https://docs.google.com/document/d/1_aDTzhx-A1cgRTjMtJsj3_LIUcn6Bdu0UJJakgr1ZoQ/edit?usp=sharing
+
+/*En caso de que no puedas acceder al archivo de google doc*/
+1° Chequee imágenes del index para optimizar su peso y pixelado y modifique redes sociales.
+	a.Logo, ahora paso a usar logo_min que está optimizado.
+	b.Logos redes sociales: elimine las imágenes y descargue los fonts desde Font-awesome
+2° Chequee que las jerarquías de las etiquetas se cumplan y que toda etiqueta que se abre y debe cerrarse, tenga su cierre.
+3°Controle que las imágenes del Index tengan el alt completo.
+4° Revisión de ortografía.
+4° Incorpore un meta para describir brevemente qué servicios brinda la empresa, cuál es la función de la misma y la utilidad de cada página.
+5° Sume otro meta para palabras claves, como casa, obra, deco en cada una de las páginas del proyecto.
+
